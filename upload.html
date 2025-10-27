@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload FASTQ Files</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Upload FASTQ (.fq.gz) Files</h2>
+    <p>Drag and drop your files below or click to browse</p>
+
+    <div id="drop-area">
+      <input type="file" id="fileElem" accept=".fq.gz" multiple hidden>
+      <label for="fileElem" id="fileLabel">📂 Drop files here or click to upload</label>
+    </div>
+
+    <input type="email" id="email" placeholder="Enter your email for updates" required>
+    <button id="uploadBtn">Upload</button>
+    <p id="uploadMsg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
